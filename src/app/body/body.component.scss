@@ -3,11 +3,31 @@
     padding: 0px;
 }
 
-
+p{
+    text-align: justify;
+}
+h6{
+    font-family: Barlow ;
+    color: white;
+    font-size: 20px;
+}
 #cuerpo{
    
     background-color: rgb(31, 21, 39);
    
+}
+#card {
+    background-color:rgb(31, 21, 39);
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#icono, #icono1, #icono2, #icono3 {
+    color: #9b9922;
+    width: 200px;
+    height: 100px;
+    margin: 0px auto;
 }
 
 #cuerpo {
@@ -115,6 +135,53 @@ color: white;
     height: 20px;
     
 }
+
+#javascript {
+    color:yellow;
+    height: 90px;
+    margin-bottom: 20px;
+}
+#angular {
+    color:rgb(221, 48, 48);
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+#html {
+    color:orange;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+#css {
+    color:rgb(41, 41, 241);
+    height: 90px;
+    margin-right: 40px;
+}
+#sass {
+    color:rgb(248, 133, 152);
+    height: 90px;
+    margin-right: 40px;
+}
+#less {
+    color: blue;
+    height: 90px;
+}
+#grid {
+    margin-bottom: 60px;
+    height: 120px;
+    padding-bottom: 33px;
+}
+
+#bootstrap {
+    color:rgb(120, 41, 211);
+    height: 90px;
+    margin-bottom: 20px;
+}
+#barrita {
+    margin-top: -50px;
+}
+
 #id0:hover, #id1:hover, #id2:hover, #id3:hover, #id4:hover, #id5:hover, #id6:hover {
     color:rgb(127, 48, 180);
 }
@@ -194,3 +261,6 @@ color: white;
    
 }
 
+.progress-bar{
+    background-color: #7f30b4;
+}
