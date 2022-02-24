@@ -1,0 +1,55 @@
+<!--====== INICIO HEADER ======-->
+
+<nav class="inline-container main-nav">    
+
+  <ul id="main-menu" class="main-menu">
+      <div class="izquierda">
+          <a class="a-Arg"
+          href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa "
+          target="_blank">
+          <img class="img-Arg" src="assets/imgs/AP.png" alt="Arg Programa Logo"/>
+          </a>
+      </div>
+
+      <li class="main-menu__item">
+          <a href="#" class="main-menu__link fa-brands fa-facebook"></a>
+      </li>
+      <li class="main-menu__item">
+          <a href="#" class="main-menu__link fa-brands fa-youtube"></a>
+      </li>
+      <li class="main-menu__item">
+          <a href="#" class="main-menu__link fa-brands fa-instagram"></a>
+      </li>
+      <li class="main-menu__item">
+          <span id="enviar"  class=" "(click)="muestro()" type="submit"><i class="main-menu__link fa-solid fa-pen-to-square"></i></span>
+      </li>
+    </ul>
+    <span *ngIf="ocultar == false; else visible"></span>
+  
+  <!-- Empieza el ng-template, lo único importante acá es colocarle el #loQueQuieras, en este caso elegí ponerle #visible-->
+  <ng-template #visible>
+      
+    <!-- lo que este dentro del ng-template no tiene importancia para el ejemplo, puede ser reemplazado por cualquier cosa que queramos mostrar -->
+    <div class="row justify-content-center align-items-center">
+        <div class="card card-title text-white" style="width:18rem;">
+            <form>
+                <label for="exampleInputEmail1" class="form-label mt-3"> Usuario</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label  for="exampleInputEmail1" class="form-label mt-3"> Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </form>
+            <p class="text-uppercase mt-3 text-center"> </p>
+            <button class="btn">Enviar</button>
+            <br>
+        </div>
+    </div>
+    
+  <!-- etiqueta de cierre de ng-template -->
+  </ng-template> 
+</nav>
+<div class="img-Div">
+  <div class="img1"></div>
+</div>
+<!-- <img class="img-Represent" src="img/2.png" alt=""> //comentada por ahora (pruebas) -->
+
+<!-- ===== FIN HEADER =====-->

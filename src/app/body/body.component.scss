@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#cuerpo{
+   
+    background-color: rgb(31, 21, 39);
+   
+}
+
+#cuerpo {
+    @media (max-width: 395px){
+        
+    }
+        
+    }
+
+//Colores//
+$colordetexto: white;
+$textocolor : black;
+$textocolor1: #9b9922;
+
+.skill {
+    width: 160px;
+    height: 160px;
+
+}
+.uncuyo>img {
+    width: 190px;
+    height: 190px;
+    border-radius: 25%;
+    @media (max-width:270px) {
+        display: none;
+    }    
+
+}
+
+.ap>img {
+    margin-top: 45px;
+    width: 250px;
+    height: 163px;
+    @media (max-width:270px) {
+        display: none;
+    }  
+}
+#barra {
+    @media (max-width: 600px) {
+        font-size: 20px;
+        display: none;
+
+    }
+    @media (max-width: 290px) {
+        font-size: 15px;
+        display: none;     
+    }
+}
+
+
+
+#navega {
+    background-color: rgb(51, 49, 49);
+    border-top: 10px solid black;
+}
+#presentacion, #sobremi, #educacion, #hardand, #proyectos, #experiencia, #acerca, #tituloh1 {
+    color:$textocolor1;
+    font-family: Barlow;
+    font-style: bold;
+    text-shadow: 1px 1px black;
+}
+#barra, #progress {
+    background-color: rgb(51, 49, 49);
+}
+p, h2, h3,h4,h5, ul, li{
+font-family: Barlow;
+color: white;
+}
+.progreso {
+    color: #9b9922;
+    height: 40px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 0.8;
+    
+}
+#presentacion, #nac, #residencia, #edad, #estudios, #mail {
+    font-family: Barlow;
+    font-style: bold;
+    color: #9b9922;
+    font-size: 30px;
+}
+#presentacion {
+    font-size: 40px;
+    color:$textocolor1;
+}
+#titulo, #presentacion, #primeraparte {
+    text-align: center;
+}
+
+#cols {
+    color: white;
+    
+}
+#pres, #sobre, #educa, #skil, #proyec {
+    background-color:  rgb(51, 49, 49);
+}
+#pres:hover, #sobre:hover, #educa:hover, #skil:hover, #proyec:hover {
+    color: #7f30b4;
+    font-family: Barlow;
+    font-style: bold;
+}
+#id1, #id2, #id3, #id4, #id5, #id0, #id6 {
+    color: black;
+    height: 20px;
+    
+}
+#id0:hover, #id1:hover, #id2:hover, #id3:hover, #id4:hover, #id5:hover, #id6:hover {
+    color:rgb(127, 48, 180);
+}
+
+#imageen {
+    background: url(../img/wall.jpg);
+    background-color: rgb(51, 49, 49);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    @media (max-width:450px){
+        height: 400px;
+    }
+}
+
+#perfil {
+    width: 260px;
+    
+}
+
+
+#subt {
+    text-align: center;
+    padding: 15%;
+    color: $textocolor;
+    font-size: 150px;
+    text-shadow: 10px 10px black;
+}
+
+#navegacion {
+    width: 10%;
+    height: 930px;
+    margin-top: 0px;
+    display:block;
+    float: left;
+    position:sticky(top);
+    background-color: $textocolor;
+    border: 2px solid black;
+
+}
+
+#asidenav {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(15, 117, 177, 0.589);
+}
+.btn {    
+    border: 1px solid black;
+}
+.btn:hover{
+   background-color:  $textocolor;
+}
+
+.sticky {
+    border-bottom: 2px solid black;
+    background: $textocolor ;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+#pres, #sobre, #educa, #skil, #proyec {
+    @media (max-width: 290px) {
+        font-size: 10px;
+    }
+        
+    }
+
+
+#cols {
+
+    background-color:$textocolor ;
+    font-size: 30px;
+    margin-bottom: -1%;
+   
+}
+
