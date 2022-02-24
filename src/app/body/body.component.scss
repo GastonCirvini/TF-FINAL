@@ -171,6 +171,14 @@ color: white;
     margin-bottom: 60px;
     height: 120px;
     padding-bottom: 33px;
+    @media (max-width: 356px) {
+        margin-bottom: -10px;
+        margin-left: -22px;
+    }
+    @media (max-width:308px) {
+        margin-left: -50px;
+        
+    }
 }
 
 #bootstrap {
@@ -264,3 +272,4 @@ color: white;
 .progress-bar{
     background-color: #7f30b4;
 }
+
