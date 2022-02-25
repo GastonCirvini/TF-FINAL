@@ -113,15 +113,14 @@
       </div>
       <br><br>
       <div class="container">
-        
+        <!----Crear ngClass o crear componente hijo-->
         <div class="card" id="card">
-        <h3>Trabajo en Equipo</h3> 
+        <h3>Trabajo en Equipo <i id="id2" (click)="this.habilitarSeccion()" class="fa-solid fa-pencil"></i></h3> 
         <br>
         <i id="icono" class="fa-solid fa-people-carry-box"></i>
         <br>
-        <p> 
-          El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas
-        </p>
+        <input [readonly]="habilitar ? 'enabled' : 'disabled' " value="El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas" > 
+        
       </div>
       <br>
       <div class="card" id="card">
@@ -162,14 +161,14 @@
         <br><br>
         <h2 style="font-family: Barlow; font-size: 37px;">Hard Skills</h2>
         <br><br>
-        <h3>JavaScript - DOM</h3> <i id="javascript" class="fa-brands fa-js-square"></i>
+        <h3>JavaScript</h3> <i id="javascript" class="fa-brands fa-js-square"></i>
         <p>
           <br>
           <ngb-progressbar class="progreso" [showValue]="true" type="warning" [value]="40" [max]="100" [striped]="false"
             [animated]="true"></ngb-progressbar>
         </p>
         <br><br><br>
-        <h3>Angular - TypeScript</h3> <i id="angular" class="fa-brands fa-angular"></i>
+        <h3>Angular</h3> <i id="angular" class="fa-brands fa-angular"></i>
         <p>
           <br>
           <ngb-progressbar class="progreso" [showValue]="true" type="danger" [value]="50" [max]="100" [striped]="false"
@@ -179,20 +178,20 @@
         <h3>HTML</h3> <i id="html" class="fa-brands fa-html5"></i>
         <p>
           <br>
-          <ngb-progressbar class="progreso" [showValue]="true" type="success" [value]="90" [max]="100" [striped]="false"
+          <ngb-progressbar class="progreso" [showValue]="true" type="success" [value]="70" [max]="100" [striped]="false"
             [animated]="true"></ngb-progressbar>
         </p>
         <br><br><br>
         <h3>CSS - SASS - Grid - Less</h3> <i id="css" class="fa-brands fa-css3-alt"></i> <i id="sass" class="fa-brands fa-sass"></i>  <img id="grid" src="assets/imgs/grid.png" alt="" srcset=""> <i id="less" class="fa-brands fa-less"></i>
         <p>
-          <ngb-progressbar id="barrita" id="skilcss" class="progreso" [showValue]="true" type="primary" [value]="80" [max]="100" [striped]="false"
+          <ngb-progressbar id="barrita" id="skilcss" class="progreso" [showValue]="true" type="primary" [value]="50" [max]="100" [striped]="false"
             [animated]="true"></ngb-progressbar>
         </p>
         <br><br><br>
         <h3>Bootstrap</h3>  <i id="bootstrap" class="fa-brands fa-bootstrap"></i>
         <p>
-          <br><br>
-          <ngb-progressbar class="progreso"  [showValue]="true" style="color: rgb(120, 41, 211)" [value]="60" [max]="100" [striped]="false"
+          <br>
+          <ngb-progressbar class="progreso"  [showValue]="true" style="color: rgb(120, 41, 211)" [value]="50" [max]="100" [striped]="false"
             [animated]="true"></ngb-progressbar>
         </p>
       </div>
@@ -210,3 +209,7 @@
       </div>
       </div>
       </div>
+<div class="container-fluid">
+  <form action=""></form>
+  <input type="text" id="formulario" disabled  placeholder="Este es un texto de prueba" >
+</div>

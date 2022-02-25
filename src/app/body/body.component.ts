@@ -19,16 +19,24 @@ export class BodyComponent implements OnInit {
   nombre: string = "JavaScript";
   sticky:boolean = false;
   elementPosition: any;
-
+  habilitar:boolean = false;
 
 constructor(private messageService: MessageService) {}
 
 ngOnInit() {
+
+}
+
+ habilitarSeccion () {
+  this.habilitar = true;
+console.log(this.habilitar); 
 }
 
 ngAfterViewInit (){
   this.elementPosition = this.menuElement.nativeElement.offsetTop
+
 }
+
 @HostListener ('window:scroll', ['$event'])
   handleScroll (){
     const windowScroll = window.pageYOffset;
