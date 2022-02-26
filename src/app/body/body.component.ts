@@ -19,7 +19,7 @@ export class BodyComponent implements OnInit {
   nombre: string = "JavaScript";
   sticky:boolean = false;
   elementPosition: any;
-  habilitar:boolean = false;
+  habilitar:boolean = true;
 
 constructor(private messageService: MessageService) {}
 
@@ -27,7 +27,11 @@ ngOnInit() {
 
 }
 
- habilitarSeccion () {
+ habilitarSeccion (): void {
+  this.habilitar = false;
+console.log(this.habilitar); 
+}
+deshabilitarSeccion (): void {
   this.habilitar = true;
 console.log(this.habilitar); 
 }

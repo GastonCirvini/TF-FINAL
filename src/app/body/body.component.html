@@ -12,14 +12,16 @@
     <!----Hacer la imagen estática-->
     <br>
     <img class="img-thumbnail rounded-circle mb-4" src="assets/imgs/perfil.jpg" id="perfil" alt="">
-    <br>
-    <i id="id1" class="fa-solid fa-pencil"></i>
+    
+    
 
     <h1 id="tituloh1">{{cabezal}} - Full Stack Web Developer Junior </h1>
-    <br><br>
-    <h2 id="presentacion">Presentación</h2><i id="id0" class="fa-solid fa-pencil"></i>
+    <br>
+    <h2 id="presentacion">Presentación</h2>
     <br>
     <br>
+    <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+        <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
     <h3 id="nac">Nacimiento</h3>
     <h6 >10 de abril de 1990</h6>
     <h3 id="residencia">Lugar de residencia</h3>
@@ -40,12 +42,15 @@
   <br><br>
     <div class="container card" id="card">
       <h2 id="acerca">Sobre Mi <i id="id2" class="fa-solid fa-pencil"></i></h2>
-      <p>Soy José Gastón Cirvini, nacido el 10 de abril de 1990 en Mendoza, Argentina. Desde la niñez que he estado interesado en varias disciplinas, tales como las ciencias sociales, la pedagogía, la música, la programación y la informática. Busco el objetivo de poder vincular todos estos bloques con el fin de lograr, dentro del contexto educativo formal, aprendizajes significativos para el desarrollo integral de las personas, para que las generaciones del futuro puedan tener un capital cultural y pensamiento crítico para incorporarse dentro del mundo laboral y del mundo universitario de forma efectiva. Gracias a la Maestría en Enseñanza en Escenarios Digitales he generado la implementación interdisciplinar en actividades que vinculan las ciencias sociales, la informática, la innovación pedagógica a través de los postulados emergentes de estas últimas décadas, tales como la gamificación y el b-learning; teniendo como norte que el aprendizaje continuo, sumado acá a la programación como un gran pilar, es la base para un futuro cada vez más colaborativo y vinculante de distintas áreas, proponiendo metas a largo plazo y ofreciendo las herramientas para la construcción autónoma del aprendizaje individual y grupal, como así también colaborativo utilizando como medio principal las herramientas y escenarios digitales para la consecución de metas.
-      </p>
-      <p>
-        Fanático de la música, de los juegos de video no solamente como pasatiempos y de diversión, sino también como potentes herramientas para el desarrollo de distintas capacidades, que ayudan a la creatividad ante situaciones de rápidas decisiones y del pensamiento lateral como característica clave en el mundo actual.
-      </p>
-    </div>
+      <div class="container"> <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+        <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
+        <br> <br>
+      </div>
+      <textarea class="inputsobre" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">Soy José Gastón Cirvini, nacido el 10 de abril de 1990 en Mendoza, Argentina. Desde la niñez que he estado interesado en varias disciplinas, tales como las ciencias sociales, la pedagogía, la música, la programación y la informática. Busco el objetivo de poder vincular todos estos bloques con el fin de lograr, dentro del contexto educativo formal, aprendizajes significativos para el desarrollo integral de las personas, para que las generaciones del futuro puedan tener un capital cultural y pensamiento crítico para incorporarse dentro del mundo laboral y del mundo universitario de forma efectiva. Gracias a la Maestría en Enseñanza en Escenarios Digitales he generado la implementación interdisciplinar en actividades que vinculan las ciencias sociales, la informática, la innovación pedagógica a través de los postulados emergentes de estas últimas décadas, tales como la gamificación y el b-learning; teniendo como norte que el aprendizaje continuo, sumado acá a la programación como un gran pilar, es la base para un futuro cada vez más colaborativo y vinculante de distintas áreas, proponiendo metas a largo plazo y ofreciendo las herramientas para la construcción autónoma del aprendizaje individual y grupal, como así también colaborativo utilizando como medio principal las herramientas y escenarios digitales para la consecución de metas.
+
+      Fanático de la música, de los juegos de video no solamente como pasatiempos y de diversión, sino también como potentes herramientas para el desarrollo de distintas capacidades, que ayudan a la creatividad ante situaciones de rápidas decisiones y del pensamiento lateral como característica clave en el mundo actual.
+      </textarea>
+      </div>
     <br> <br> <br> <br><br>
 
       <div class="container-fluid">
@@ -75,7 +80,9 @@
         <div class="row">
 
           <div class="col-md-6 col-ms-12">
-            <h2 id="educacion">Educación <i id="id4" class="fa-solid fa-pencil"></i></h2>
+            <h2 id="educacion">Educación</h2>
+            <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+            <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
             <p>Profesor de Grado Universitario en Historia desde 2017, recibido en la Facultad de Filosofía y Letras de
               la Universidad Nacional de Cuyo. Magister en Enseñanza en Escenarios Digitales desde 2022, recibido en la
               Asociación de Universidades Sur Andinas, sede en la Facultad de Educación de la Universidad Nacional de
@@ -89,7 +96,9 @@
               videojuegos en los escenarios educativos formales</p>
           </div>
           <div class="col-md-6 col-ms-12">
-            <h2 id="experiencia">Experiencia <i id="id3" class="fa-solid fa-pencil"></i></h2>
+            <h2 id="experiencia">Experiencia </h2>
+            <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+            <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
             <p>Equipo Argentino de Antropología Forense (EAAF) - Trabajos realiados en Cuadro 33 - Dos camapañas</p>
             <p>Reparador de PC - Software & Hardware (2010-2022) - Trabajos realizados en formato freelance</p>
             <p>Profesor de Ciencias Sociales en Escuela Don Bosco (2017-2019) - Trabajos de suplencia</p>
@@ -112,46 +121,64 @@
         <h2 style="font-family: Barlow; font-size: 37px;">Soft Skills</h2>
       </div>
       <br><br>
+      
       <div class="container">
         <!----Crear ngClass o crear componente hijo-->
         <div class="card" id="card">
-        <h3>Trabajo en Equipo <i id="id2" (click)="this.habilitarSeccion()" class="fa-solid fa-pencil"></i></h3> 
-        <br>
-        <i id="icono" class="fa-solid fa-people-carry-box"></i>
-        <br>
-        <input [readonly]="habilitar ? 'enabled' : 'disabled' " value="El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas" > 
+          <h3>Trabajo en Equipo </h3> 
+          <div class="container"> <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+            <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
+          </div>
+         
+          <br>
+          <i id="icono" class="fa-solid fa-people-carry-box"></i>
+          <br>
+            <br>
+            <textarea class="imputotros" id="input" cols="30" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">"El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas" 
+            </textarea>
+        
+          
+        
         
       </div>
       <br>
       <div class="card" id="card">
         <h3>Comunicación</h3>
+        <div class="container"><button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+          <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button></div>
         <br>
         <i id="icono1" class="fa-solid fa-comments"></i>
         <br>
-        <p> 
+        <textarea class="imputotros" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
           El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas
-        </p>
+        </textarea>
         
       </div>
       <br>
       <div class="card" id="card">
         <h3>Creatividad</h3>
+        <div class="container"><button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+          <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button></div>
+        <br>
         <br>
         <i id="icono2" class="fa-solid fa-paintbrush"></i>
         <br>
-        <p> 
+        <textarea class="imputotros" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
           El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas
-        </p>
+        </textarea>
       </div>
       <br>
         <div class="card" id="card">
         <h3>Adaptación al cambio</h3>
+        <div class="container"><button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+          <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button></div>
+        <br>
         <br>
         <i id="icono3" class="fa-solid fa-arrow-right-arrow-left"></i>
         <br>
-        <p> 
+        <textarea class="imputotros" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
           El trabajo en equipo facilita el cumplimiento de objetivos, incrementa la motivación y la creatividad, y favorece las habilidades sociales de cada uno. El trabajo en equipo es una capacidad altamente valorada en el mercado laboral, y es una de las características más demandadas por las empresas
-        </p>
+        </textarea>
       </div>
         
       </div>
@@ -198,18 +225,18 @@
 
 
 
-      <div class="container-fluid">
-        <h2 id="proyectos">Proyectos <i id="id6" class="fa-solid fa-pencil"></i></h2>
-        <p>Realización de Portfolio para el Trabajo Final de la segunda parte del curso Argentina Programa en el contexto de la presentación del Trabajo Final Integrador de contenidos vistos - (2022)</p>
-        <br>
-        <p>Participación y puesta en marcha de Muestra de Ciencias en Escuela Italiana XXI Abril a través del uso de los escenarios digitales. Creación de templates y diseño de actividades (2020-2021)</p>
-        <br>
-        <p>Cursando Maestría en Enseñanza en Escenarios Digitales incorporando la informática como herramientas importantes para el desarrollo y puesta en marcha de actividades pedagógicas (2020-2022)</p>
+      <div class="container-fluid" style="height: 400px;">
+        <h2 id="proyectos">Proyectos</h2>
+        <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
+          <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
+        <br> <br>
+        <textarea class="inputbase" class="imputotros" style="width:100%; height: 300px;" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
+          Realización de Portfolio para el Trabajo Final de la segunda parte del curso Argentina Programa en el contexto de la presentación del Trabajo Final Integrador de contenidos vistos - (2022)
+        
+          Participación y puesta en marcha de Muestra de Ciencias en Escuela Italiana XXI Abril a través del uso de los escenarios digitales. Creación de templates y diseño de actividades (2020-2021)
+           
+          Cursando Maestría en Enseñanza en Escenarios Digitales incorporando la informática como herramientas importantes para el desarrollo y puesta en marcha de actividades pedagógicas (2020-2022)</textarea>
         <br>
       </div>
       </div>
       </div>
-<div class="container-fluid">
-  <form action=""></form>
-  <input type="text" id="formulario" disabled  placeholder="Este es un texto de prueba" >
-</div>
