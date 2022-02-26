@@ -23,21 +23,22 @@
     <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
         <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
     <h3 id="nac">Nacimiento</h3>
-    <h6 >10 de abril de 1990</h6>
+    <textarea class="inputdatos" id="input" cols="20"  [readonly]="this.habilitar" name="textarea" vertical-align="baseline" rows="10">10 de abril de 1990</textarea>
     <h3 id="residencia">Lugar de residencia</h3>
-    <h6 > Mendoza, Argentina</h6>
+    <textarea class="inputdatos" id="input" cols="20"  [readonly]="this.habilitar" name="textarea" vertical-align="baseline" rows="10">Mendoza, Argentina</textarea>
     <h3 id="edad">Edad:</h3>
-    <h6 >31 años</h6>
+    <textarea class="inputdatos" id="input" cols="20"  [readonly]="this.habilitar" name="textarea" vertical-align="baseline" rows="10">31 años</textarea>
     <h3 id="estudios">Estudios</h3>
-   
-      <h6>Profesor de Grado Universitario en Historia (UNCuyo. 2017)</h6>
-      <br>
-      <h6>Magister en Enseñanza en Escenarios Digitales (AUSA. 2022)</h6>
-      <br>
-      <h6>Full Stack Web Junior Developer (Argentina Progrma. 2022)</h6>
+    <textarea class="inputdatostitulos" id="input" cols="20"  [readonly]="this.habilitar" name="textarea" vertical-align="baseline" rows="10">
+      Profesor de Grado Universitario en Historia (UNCuyo. 2017)
+
+      Magister en Enseñanza en Escenarios Digitales (AUSA. 2022)
       
+      Full Stack Web Junior Developer (Argentina Progrma. 2022) </textarea>
+      
+      <br><br>
     <h3 id="mail">E-mail</h3>
-    <h6> josegastoncirvini@gmail.com </h6>
+    <textarea class="inputdatos" id="input" cols="20"  [readonly]="this.habilitar" name="textarea" vertical-align="baseline" rows="10">josegastoncirvini@gmail.com</textarea>
   </div>
   <br><br>
     <div class="container card" id="card">
@@ -225,7 +226,7 @@
 
 
 
-      <div class="container-fluid" style="height: 400px;">
+      <div class="container-fluid" style="height: 300px;">
         <h2 id="proyectos">Proyectos</h2>
         <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
           <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
