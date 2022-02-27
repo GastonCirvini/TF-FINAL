@@ -2,23 +2,46 @@
 <div id="imageen" class="container-fluid" style="background-color: rgb(51, 49, 49);">
 </div>
 
-<!-- Main Navar -->
-
-
 
 <!----Cuerpo de la página - Contenido-->
 <div id="cuerpo" class="col-ms-12 col-xs-12">
   <div id="primeraparte" class="container-fluid">
-    <!----Hacer la imagen estática-->
+    <!----Imágen de perfil-->
     <br>
-    <img class="img-thumbnail rounded-circle mb-4" src="assets/imgs/perfil.jpg" id="perfil" alt="">
+    <div class="container">
+      <img class="img-thumbnail rounded-circle mb-4" src="assets/imgs/perfil.jpg" id="perfil" alt="">
+    </div>
+    <div class="container-fluid">
+      
+    </div>
+    <!-----
+      <button id="plus"  [title]="this.title" class="btn" (click)="muestro()"><i class="fa-solid fa-plus" ></i></button>
+      -->
+    
+<!---- FIN imágen de perfil-->
+
+      <!----
+        <span *ngIf="cambiar == false; else visible"></span>
+        
+        <ng-template  #visible>
+          
+          <div id="cambiofoto"><span> URL</span> <br> <input type="text" name="URL" innerText="URL" id="">   <br> <br>
+            <form>
+              <div>
+                <button type="submit" innerText="none" class="btn" id="exampleFormControlFile1">Subir</button><br>
+                <button  id="btn1" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
+              </div>
+            </form>
+          </div>
+        </ng-template>
+      -->
+   
     
     
 
     <h1 id="tituloh1">{{cabezal}} - Full Stack Web Developer Junior </h1>
     <br>
     <h2 id="presentacion">Presentación</h2>
-    <br>
     <br>
     <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
         <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
@@ -42,7 +65,7 @@
   </div>
   <br><br>
     <div class="container card" id="card">
-      <h2 id="acerca">Sobre Mi <i id="id2" class="fa-solid fa-pencil"></i></h2>
+      <h2 id="acerca">Sobre Mi</h2>
       <div class="container"> <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
         <button  id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
         <br> <br>
@@ -187,7 +210,7 @@
       <br><br>
       <div class="container-fluid">
         <br><br>
-        <h2 style="font-family: Barlow; font-size: 37px;">Hard Skills</h2>
+        <h2 style="font-family: Barlow; font-size: 37px;">Hard Skills - Front End</h2>
         <br><br>
         <h3>JavaScript</h3> <i id="javascript" class="fa-brands fa-js-square"></i>
         <p>
@@ -223,15 +246,14 @@
             [animated]="true"></ngb-progressbar>
         </p>
       </div>
+      <br><br>
 
-
-
-      <div class="container-fluid" style="height: 300px;">
+      <div id="proyectoscaja" class="container-fluid" style="height: 300px;">
         <h2 id="proyectos">Proyectos</h2>
         <button id="btn"  (click)="habilitarSeccion()" class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button> 
           <button id="btn1" (click)="deshabilitarSeccion()" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
         <br> <br>
-        <textarea class="inputbase" class="imputotros" style="width:100%; height: 300px;" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
+        <textarea class="inputbase" class="imputotros" style="width:100%; height: 200px;" id="input" cols="20" [readonly]="this.habilitar" name="textarea" vertical-align="baseline"  cols="30" rows="10">
           Realización de Portfolio para el Trabajo Final de la segunda parte del curso Argentina Programa en el contexto de la presentación del Trabajo Final Integrador de contenidos vistos - (2022)
         
           Participación y puesta en marcha de Muestra de Ciencias en Escuela Italiana XXI Abril a través del uso de los escenarios digitales. Creación de templates y diseño de actividades (2020-2021)

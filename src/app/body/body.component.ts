@@ -3,6 +3,7 @@ import { MessageService } from 'primeng/api';
 import { MenuItem } from 'primeng/api';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -20,6 +21,11 @@ export class BodyComponent implements OnInit {
   sticky:boolean = false;
   elementPosition: any;
   habilitar:boolean = true;
+  url: string= "";
+  title:string = "Cambiar foto de perfil";
+  cambiar: boolean = false;
+  random:number = 0;
+  
 
 constructor(private messageService: MessageService) {}
 
@@ -27,9 +33,20 @@ ngOnInit() {
 
 }
 
+muestro(){
+  this.random +=1;
+  this.cambiar = true;
+  console.log(this.random);
+  if (this.random%2 == 0){
+   this.cambiar=false
+  }
+  
+  }
+ 
+
  habilitarSeccion (): void {
   this.habilitar = false;
-console.log(this.habilitar); 
+  console.log(this.habilitar); 
 }
 deshabilitarSeccion (): void {
   this.habilitar = true;
@@ -40,6 +57,12 @@ ngAfterViewInit (){
   this.elementPosition = this.menuElement.nativeElement.offsetTop
 
 }
+
+cambiarImagen (){
+
+}
+
+
 
 @HostListener ('window:scroll', ['$event'])
   handleScroll (){
@@ -54,4 +77,7 @@ ngAfterViewInit (){
 
 
 
-
+export class ImageSnippet {
+  constructor (public src:string, public file: File){}
+  
+}

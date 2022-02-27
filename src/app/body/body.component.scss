@@ -11,6 +11,41 @@ h6{
     color: white;
     font-size: 20px;
 }
+#cambiofoto {
+    color: white;
+    position:absolute;
+    width: 29%;
+    height: 160px;
+    margin-left: 500px;
+    margin-bottom: 200px;
+    border: 2px solid black;
+    border-radius: 20%;
+    background-color: transparent;
+    
+}
+.img-thumbnail {
+    width: 300px;
+}
+#plus {
+    border-radius: 50%;color: #9b9922  ; background-color: transparent; border: none;
+   
+    position:relative;
+    
+
+}
+title {
+    background-color: none;
+
+}
+
+#cajaproyectos {
+    @media (max-width: 772px) {
+        height: 300px;
+    }
+}
+
+
+
 #cuerpo{
    
     background-color: rgb(31, 21, 39);
@@ -207,10 +242,7 @@ color: white;
     }
 }
 
-#perfil {
-    width: 260px;
-    
-}
+
 
 
 #subt {
@@ -334,7 +366,7 @@ color: white;
             text-align: justify;
             border: none;
             height: 400px;
-            width: 100%;
+            width: 80%;
             font-family: Barlow;
             resize: none;
             outline: none;
