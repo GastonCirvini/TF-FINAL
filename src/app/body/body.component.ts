@@ -42,7 +42,6 @@ muestro(){
   }
   
   }
- 
 
  habilitarSeccion (): void {
   this.habilitar = false;
